@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [SuiteTesting]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://google.com"/>
+  <test thread-count="2" parallel="classes" name="TestingDemo(failed)">
+    <classes>
+      <class name="SeleniumTrainingDay3.TestNG_1">
+        <methods>
+          <include name="testMethod2"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- SeleniumTrainingDay3.TestNG_1 -->
+    </classes>
+  </test> <!-- TestingDemo(failed) -->
+</suite> <!-- Failed suite [SuiteTesting] -->
